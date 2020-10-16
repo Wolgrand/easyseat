@@ -82,16 +82,19 @@ export const LoginForm = styled.form`
     margin-top: 2rem;
   }
 
-  button {
+  a {
+    display: flex;
     flex:1;
-    width: 100%;
+    justify-content: center;
+
     margin: 1.5rem 0;
     line-height: 4rem;
     border-radius: 0.8rem;
-    border: none;
-    align-self: center;
+
+    text-decoration: none;
+
     color: var(--color-title-primary);
     background: rgba(255, 255, 255, 0.3);
-    outline: 0;
+
   }
 `;

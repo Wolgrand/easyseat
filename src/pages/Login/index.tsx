@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 import { Container, Header, LoginForm, Footer } from './styles';
 import loginImage from '../../assets/images/loginImage.svg'
@@ -14,7 +15,7 @@ const Login: React.FC = () => {
       <LoginForm>
         <input type="email" name="email" id="email" placeholder="email"/>
         <input type="password" name="password" id="password" placeholder="senha"/>
-        <button type="submit">Entrar</button>
+        <Link to="/home">Entrar</Link>
       </LoginForm>
       <Footer>
         <p>Esqueci a senha</p>
