@@ -46,8 +46,16 @@ export const Footer = styled.footer`
     align-items: center;
 
     p {
+      display: flex;
       margin: 10px 0;
       font: 500 1.5rem Roboto;
+      align-items: center;
+      text-align: center;
+      svg {
+        align-items: center;
+        margin-left: 0.5rem;
+      }
+
   }
 `;
 
@@ -86,6 +94,7 @@ export const LoginForm = styled.form`
     display: flex;
     flex:1;
     justify-content: center;
+
 
     margin: 1.5rem 0;
     line-height: 4rem;

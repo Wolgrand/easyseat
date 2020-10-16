@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import {FiArrowRight} from 'react-icons/fi'
 
 import { Container, Header, LoginForm, Footer } from './styles';
 import loginImage from '../../assets/images/loginImage.svg'
@@ -19,7 +20,7 @@ const Login: React.FC = () => {
       </LoginForm>
       <Footer>
         <p>Esqueci a senha</p>
-        <p>Criar conta</p>
+        <p>Criar conta <FiArrowRight/></p>
       </Footer>
     </Container>
   );
