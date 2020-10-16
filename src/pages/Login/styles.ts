@@ -76,7 +76,7 @@ export const LoginForm = styled.form`
     border:none;
     border-bottom: 1px solid #fff;
     outline: 0;
-    font: 400 1.8rem Roboto;
+    font: 500 2rem Roboto;
     
 
   }
@@ -94,7 +94,7 @@ export const LoginForm = styled.form`
     display: flex;
     flex:1;
     justify-content: center;
-
+    -webkit-appearance: none;
 
     margin: 1.5rem 0;
     line-height: 4rem;
