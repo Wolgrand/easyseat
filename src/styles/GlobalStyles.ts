@@ -48,7 +48,7 @@ body,
 input,
 button,
 textarea {
-  font: 500 1.6rem Poppins;
+  font: 500 1.6rem Roboto;
   color: var(--color-title-primary);
 }
 
