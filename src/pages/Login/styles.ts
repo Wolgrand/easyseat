@@ -67,7 +67,9 @@ export const LoginForm = styled.form`
 
 
   input {
-    
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
     width: 100%;
 
     margin: 1rem 0;
@@ -104,6 +106,10 @@ export const LoginForm = styled.form`
 
     color: var(--color-title-primary);
     background: rgba(255, 255, 255, 0.3);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+
 
   }
 `;
