@@ -3,9 +3,8 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiMail, FiLock, FiLogIn } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
-import { FiArrowRight } from 'react-icons/fi';
 
-import { Container, Header, LoginForm, Footer } from './styles';
+import { Container, Header } from './styles';
 import loginImage from '../../assets/images/loginImage.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -16,7 +15,7 @@ const Login: React.FC = () => {
 
   const handleSubmit = useCallback(() => {
     history.push('/home');
-  }, []);
+  }, [history]);
 
   return (
     <Container>
