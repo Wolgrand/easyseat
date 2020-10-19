@@ -1,29 +1,48 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import {FiArrowRight} from 'react-icons/fi'
+import React, { useRef, useCallback } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { FiMail, FiLock, FiLogIn } from 'react-icons/fi';
+import { Form } from '@unform/web';
+import { FormHandles } from '@unform/core';
+import { FiArrowRight } from 'react-icons/fi';
 
 import { Container, Header, LoginForm, Footer } from './styles';
-import loginImage from '../../assets/images/loginImage.svg'
+import loginImage from '../../assets/images/loginImage.svg';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 const Login: React.FC = () => {
+  const formRef = useRef<FormHandles>(null);
+  const history = useHistory();
+
+  const handleSubmit = useCallback(() => {
+    history.push('/home');
+  }, []);
+
   return (
     <Container>
       <Header>
         <h1>EasySeat</h1>
         <p>Sua plataforma de reservas</p>
       </Header>
-        <img src={loginImage} alt="logo"/>
-      <LoginForm>
-        <input type="email" name="email" id="email" placeholder="email"/>
-        <input type="password" name="password" id="password" placeholder="senha"/>
-        <Link to="/home">Entrar</Link>
-      </LoginForm>
-      <Footer>
-        <p>Esqueci a senha</p>
-        <p>Criar conta <FiArrowRight/></p>
-      </Footer>
+      <img src={loginImage} alt="logo" />
+      <Form ref={formRef} onSubmit={handleSubmit}>
+        <Input name="email" icon={FiMail} placeholder="E-mail" />
+        <Input
+          name="password"
+          icon={FiLock}
+          type="password"
+          placeholder="Senha"
+        />
+
+        <Button type="submit">Entrar</Button>
+      </Form>
+      <Link to="/home">Esqueci minha senha</Link>
+      <Link to="/home">
+        <FiLogIn />
+        Criar conta
+      </Link>
     </Container>
   );
-}
+};
 
 export default Login;
