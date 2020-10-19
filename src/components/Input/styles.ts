@@ -43,6 +43,7 @@ export const Container = styled.div<ContainerProps>`
     color: #f4ede8;
     &::placeholder {
       color: #f4ede8;
+      font-weight: 300;
     }
   }
   svg {

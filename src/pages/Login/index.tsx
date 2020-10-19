@@ -25,12 +25,12 @@ const Login: React.FC = () => {
       </Header>
       <img src={loginImage} alt="logo" />
       <Form ref={formRef} onSubmit={handleSubmit}>
-        <Input name="email" icon={FiMail} placeholder="E-mail" />
+        <Input name="email" icon={FiMail} placeholder="e-mail" />
         <Input
           name="password"
           icon={FiLock}
           type="password"
-          placeholder="Senha"
+          placeholder="senha"
         />
 
         <Button type="submit">Entrar</Button>
