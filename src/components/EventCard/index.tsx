@@ -1,7 +1,6 @@
 import React from 'react';
-import { CircularProgress } from '@material-ui/core';
+
 import { Container, Info, Header, Detail, Chart } from './styles';
-import { shade } from 'polished';
 
 import { FaClock, FaUserFriends } from 'react-icons/fa';
 import ProgressChart from '../ProgressChart';
