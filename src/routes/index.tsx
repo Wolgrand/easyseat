@@ -8,9 +8,9 @@ import Login from '../pages/Login';
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Route component={Home}  path="/home" />
+      <Route component={Login}  path="/home" />
       <Route component={Eventos} path="/eventos" />
-      <Route component={Login} exact path="/" />
+      <Route component={Home} exact path="/" />
     </BrowserRouter>
   );
 };

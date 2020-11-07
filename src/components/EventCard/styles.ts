@@ -37,9 +37,13 @@ export const Header = styled.div`
   flex-direction: column;
   width: 100%;
 
-  strong {
+  h3 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
   }
 
   p {

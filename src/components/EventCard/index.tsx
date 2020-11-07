@@ -16,7 +16,7 @@ const EventCard: React.FC<Props> = ({ color, progress, label }) => {
     <Container style={{ background: `${color}` }}>
       <Info>
         <Header>
-          <strong>Celebração Eucarística</strong>
+          <h3>Celebração Eucarística</h3>
           <p>Quinta, 07 de Outubro de 2020</p>
         </Header>
         <Detail>
