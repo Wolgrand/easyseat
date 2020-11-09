@@ -9,7 +9,7 @@ import Teste from '../pages/Teste';
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Route component={Login}  path="/home" />
+      <Route component={Login}  path="/login" />
       <Route component={Eventos} path="/eventos" />
       <Route component={Teste} exact path="/" />
       <Route component={Home} exact path="/Home" />

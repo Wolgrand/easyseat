@@ -1,19 +1,25 @@
 import React from 'react';
 
-//import { FiPower } from 'react-icons/fi';
+import { FiPower } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import EventCard from '../../components/EventCard';
-import { Container, Content} from './styles';
+import { Container, Content, Header, Filter, Title} from './styles';
 
 const Teste: React.FC = () => {
   return (
     <Container>
       <header>
-    <ul>
-      <li><a href="http://easyseat.netlify.app/">About us</a></li>
-      <li><a href="http://easyseat.netlify.app/">Services</a></li>
-      <li><a href="http://easyseat.netlify.app/">Contact</a></li>
-    </ul>
+      <Header>
+        <p>EasySeat</p>
+        <Link to="/login"><FiPower /></Link>
+      </Header>
+      <Title>Eventos</Title>
+      <Filter>
+        <button>Todos</button>
+        <button>Próximos</button>
+        <button>Passados</button>
+      </Filter>
   </header>
 
   <Content>

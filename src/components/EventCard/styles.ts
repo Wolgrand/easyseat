@@ -7,7 +7,7 @@ export const Container = styled.div`
   height: 12rem;
   flex: 1;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   line-height: 2rem;
   margin-top: 1rem;
 `;
@@ -36,7 +36,7 @@ export const Detail = styled.div`
 export const Header = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+
 
   h3 {
     font-size: 1.8rem;
@@ -56,12 +56,12 @@ export const Header = styled.div`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  width: 30rem;
+  width: 80%;
 `;
 export const Chart = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
+  width: 20%;
   position: relative;
 `;
